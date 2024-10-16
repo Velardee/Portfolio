@@ -14,14 +14,14 @@ function Welcome() {
 
   return (
     <section className="h-screen flex justify-center items-center">
-      <div className="flex flex-col-reverse md:flex-row md:justify-center gap-10 px-6 lg:px-0 w-full md:max-w-[700px] lg:min-w-[950px] max-w-5xl ">
+      <div className="flex flex-col-reverse md:flex-row md:justify-center lg:gap-5 px-6 lg:px-0 w-full md:max-w-[700px] lg:min-w-[1000px] xl:min-w-[1050px] max-w-5xl">
         <div className="flex flex-col gap-2 justify-center w-full">
           <h1 className="text-3xl text-white font-bold text-center md:text-start">
             Hola, mi <br />
             nombre es <span className="text-[#9395E3]">Hugo Velarde.</span>
           </h1>
           <h2 className="text-3xl md:text-2xl lg:text-3xl text-white font-bold text-center md:text-start">
-            Soy{" "} <br className="md:hidden " />
+            Soy <br className="md:hidden " />
             <span className="text-[#9395E3]">
               <TypeText />
             </span>

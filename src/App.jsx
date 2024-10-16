@@ -1,4 +1,5 @@
 import './App.css'
+import Experience from './components/experience'
 import Welcome from './components/welcome'
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
     <>
     <Welcome/>
+    <Experience />
     </>
   )
 }

@@ -4,18 +4,14 @@ function TypeText() {
   return (
     <TypeAnimation
       sequence={[
-        // Same substring at the start will only be typed out once, initially
-        "Ingeniero en software",
-        1000, // wait 1s before replacing "Mice" with "Hamsters"
-        "Desarrollador web",
+        "Ingeniero en Software",
         1000,
-        "Desarrollador fullstack",
+        "Desarrollador Fullstack",
         1000,
-        "Desarrollador frontend",
+        "Desarrollador Frontend",
         1000,
       ]}
       repeat={Infinity}
-      
     />
   );
 }
