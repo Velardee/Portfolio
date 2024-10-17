@@ -19,7 +19,7 @@ function Experience() {
   //TODO[]: Usar react-timeline-componente si no hacer un diseño propio
 
   return (
-    <section>
+    <section className="px-3 lg:px-3">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
