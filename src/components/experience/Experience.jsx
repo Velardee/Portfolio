@@ -19,14 +19,14 @@ function Experience() {
   //TODO[]: Usar react-timeline-componente si no hacer un diseño propio
 
   return (
-    <section className="px-3 lg:px-3">
+    <section className="px-3 lg:px-3 mb-5">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         className="w-full flex justify-center my-8"
       >
-        <h2 className="text-4xl text-white font-bold text-center animate-fade-in">
+        <h2 className="text-4xl text-white font-bold text-center">
           Mi Experiencía
         </h2>
       </motion.div>

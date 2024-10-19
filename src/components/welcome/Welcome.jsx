@@ -1,6 +1,7 @@
 import Lottie from "react-lottie";
 import welcomeAnimation from "../../lotties/welcomeAnimation.json";
 import TypeText from "../../customComponents/TypeText";
+import MainLayout from "../../layouts/MainLayout";
 
 function Welcome() {
   const animationOptions = {
@@ -13,8 +14,8 @@ function Welcome() {
   };
 
   return (
-    <section className="h-screen flex justify-center items-center">
-      <div className="flex flex-col-reverse md:flex-row md:justify-center lg:gap-5 px-6 lg:px-0 w-full md:max-w-[700px] lg:min-w-[1000px] xl:min-w-[1050px] max-w-5xl">
+    <MainLayout>
+      <div className="flex flex-col-reverse md:flex-row md:justify-center lg:gap-5 px-6 lg:px-0">
         <div className="flex flex-col gap-2 justify-center w-full">
           <h1 className="text-3xl text-white font-bold text-center md:text-start">
             Hola, mi <br />
@@ -31,7 +32,7 @@ function Welcome() {
               <p className="text-[#A2A3BB] text-base animate-slide-up-fade">
                 Scroll
               </p>
-              <div className="h-36 md:h-60 w-[1px] border-l border-[#A2A3BB] absolute top-9 animate-fade-in-right"></div>
+              <div className="h-32 xl:h-60 w-[1px] border-l border-[#A2A3BB] absolute top-9 animate-fade-in-right"></div>
             </div>
           </div>
         </div>
@@ -84,7 +85,7 @@ function Welcome() {
           </div>
         </div>
       </div> */}
-    </section>
+    </MainLayout>
   );
 }
 

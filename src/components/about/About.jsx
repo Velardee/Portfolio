@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
+import MainLayout from "../../layouts/MainLayout";
 
 function About() {
   return (
-    <section className="h-screen flex justify-center items-center px-7 lg:px-0">
-      <div className="w-full flex flex-col md:max-w-[700px] lg:min-w-[1000px] xl:min-w-[1050px] max-w-5xl gap-4">
+    <MainLayout>
+      <div className="flex flex-col gap-3 my-5">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -37,7 +38,7 @@ function About() {
             siempre lo mejor en cada proyecto.
           </p>
         </div>
-        <div className="flex w-2/6 gap-4">
+        <div className="flex flex-col items-center md:flex-row md:w-2/6 gap-4">
           <motion.div
             whileHover={{ scale: 1.1 }}
             className="min-w-24 flex justify-center py-1 px-3 rounded-xl bg-blue-500 cursor-pointer"
@@ -54,7 +55,7 @@ function About() {
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="min-w-24 rounded-xl bg-gradient-to-r from-blue-500  to-indigo-800 cursor-pointer"
+            className="min-w-24 rounded-xl bg-gradient-to-r  from-blue-500  to-indigo-800 cursor-pointer"
           >
             <a
               target="_blank"
@@ -81,7 +82,7 @@ function About() {
           </motion.div>
         </div>
       </div>
-    </section>
+    </MainLayout>
   );
 }
 
