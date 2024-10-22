@@ -11,7 +11,7 @@ function About() {
           viewport={{ once: true }}
           className="w-full"
         >
-          <h2 className="text-4xl text-white font-bold text-start animate-fade-in">
+          <h2 className="text-4xl text-white font-bold text-start">
             Acerca de mi
           </h2>
         </motion.div>
