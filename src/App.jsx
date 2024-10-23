@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import "./App.css";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
@@ -6,14 +7,29 @@ import Skills from "./components/skills";
 import Welcome from "./components/welcome";
 
 function App() {
+  // eslint-disable-next-line no-unused-vars
+  const [theme, setTheme] = useState("dark");
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.querySelector("html").classList.add("dark");
+    } else {
+      document.querySelector("html").classList.remove("dark");
+    }
+  }, [theme]);
+
+  // const handleChangeTheme = () => {
+  //   setTheme((prevTheme) => (prevTheme == "dark" ? "light" : "dark"));
+  // };
+
   return (
-    <>
+    <div className="bg-white dark:bg-primary">
       <Welcome />
-      <Experience />
+      <Experience theme={theme} />
       <About />
       <Skills />
       <Contact />
-    </>
+    </div>
   );
 }
 

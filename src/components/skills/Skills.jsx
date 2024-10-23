@@ -18,7 +18,7 @@ function Skills() {
           viewport={{ once: true }}
           className="w-full flex justify-center my-8"
         >
-          <h2 className="text-4xl text-white font-bold text-start animate-fade-in">
+          <h2 className="text-4xl text-primary dark:text-white font-bold text-start">
             Habilidades
           </h2>
         </motion.div>
