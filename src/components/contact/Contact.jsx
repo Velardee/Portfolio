@@ -34,7 +34,7 @@ function Contact() {
         <div className="w-full lg:w-2/4">
           <p className="text-xl text-primary dark:text-coolGray">
             Actualmente me encuentro disponible para comenzar nuevos proyectos,
-            Si estás buscando a un desarrollador web o simplemente quieres saber
+            si estás buscando a un desarrollador web o simplemente quieres saber
             más sobre mi trabajo, no dudes en ponerte en contacto.
           </p>
           <div className="flex flex-col gap-3 justify-center my-4">

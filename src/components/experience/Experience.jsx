@@ -79,7 +79,9 @@ function Experience({ theme }) {
                 <h4 className="vertical-timeline-element-subtitle text-base font-medium text-[#A2A3BB]">
                   {experience.company}
                 </h4>
-                <p className="text-sm">{experience.description}</p>
+                  {experience.description.split("\n").map((line, index) => (
+                    <p className="text-sm" key={index}>{line}</p>
+                  ))}
                 <div>
                   <TechnologiesExperience
                     technologies={experience.technologies}

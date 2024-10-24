@@ -6,6 +6,8 @@ import Experience from "./components/experience";
 import Skills from "./components/skills";
 import Welcome from "./components/welcome";
 
+//*App is prepare to dark mode, but now is disabled
+
 function App() {
   // eslint-disable-next-line no-unused-vars
   const [theme, setTheme] = useState("dark");
