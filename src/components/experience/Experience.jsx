@@ -15,6 +15,8 @@ import {
   CreativeTechnologies,
   MarzhalTechnologies,
 } from "../../utils/TechnologiesData";
+import { useState } from "react";
+import { useEffect } from "react";
 
 const ExperienceArray = [
   {
@@ -48,11 +50,26 @@ const ExperienceArray = [
 ];
 
 function Experience({ theme }) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <section className="px-3 lg:px-0 mb-5">
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
         viewport={{ once: true }}
         className="w-full flex justify-center my-8"
       >
@@ -60,7 +77,7 @@ function Experience({ theme }) {
           Mi Experiencía
         </h2>
       </motion.div>
-      <VerticalTimeline>
+      <VerticalTimeline animate={!isMobile}>
         {theme === "dark" ? (
           <>
             {ExperienceArray.map((experience, index) => (
@@ -79,9 +96,11 @@ function Experience({ theme }) {
                 <h4 className="vertical-timeline-element-subtitle text-base font-medium text-[#A2A3BB]">
                   {experience.company}
                 </h4>
-                  {experience.description.split("\n").map((line, index) => (
-                    <p className="text-sm" key={index}>{line}</p>
-                  ))}
+                {experience.description.split("\n").map((line, index) => (
+                  <p className="text-sm" key={index}>
+                    {line}
+                  </p>
+                ))}
                 <div>
                   <TechnologiesExperience
                     technologies={experience.technologies}

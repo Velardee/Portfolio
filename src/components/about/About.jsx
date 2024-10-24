@@ -38,7 +38,7 @@ function About() {
             siempre lo mejor en cada proyecto.
           </p>
         </div>
-        <div className="flex flex-col items-center md:flex-row md:w-2/6 gap-4">
+        <div className="flex flex-col items-center md:flex-row mt-5 md:mt-0">
           <motion.div
             whileHover={{ scale: 1.1 }}
             className="min-w-24 flex justify-center py-1 px-3 rounded-xl bg-blue-500 cursor-pointer"
