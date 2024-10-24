@@ -32,7 +32,7 @@ const ExperienceArray = [
     position: "Desarrollador Frontend (Practicas)",
     company: "4 Plus 1 Creative (Durango)",
     description:
-      "Durante mi estadía profesional, participé en el desarrollo de una aplicación de facturación, asumiendo la responsabilidad de crear el frontend desde cero. Colaboré con el equipo de backend paragarantizar la correcta integración y comunicación entre ambas partes del sistema, contribuyendo a la implementación de una solución funcional.",
+      "Durante mi estadía profesional, participé en el desarrollo de una aplicación de facturación, asumiendo la responsabilidad de crear el frontend desde cero. Colaboré con el equipo de backend para garantizar la correcta integración y comunicación entre ambas partes del sistema, contribuyendo a la implementación de una solución funcional.",
     date: "Septiembre 2021 - Enero 2022",
     img: creativeLogo,
     technologies: CreativeTechnologies,
