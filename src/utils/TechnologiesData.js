@@ -28,6 +28,18 @@ import VSCodeIcon from "../assets/icons/vscode.svg";
 import AstroIcon from "../assets/icons/astro.svg";
 import DockerIcon from "../assets/icons/docker.svg";
 import MongoDBIcon from "../assets/icons/mongoDB.svg";
+import RefineIcon from "../assets/icons/refine.svg";
+import SupabaseIcon from "../assets/icons/supabase.svg";
+
+export const CocolabTechnologies = [
+  { name: "React", src: ReactSvg },
+  { name: "Material UI", src: MaterialUIcon },
+  { name: "Next JS", src: NextJsIcon },
+  { name: "Refine", src: RefineIcon },
+  { name: "Supabase", src: SupabaseIcon },
+  { name: "Postman", src: PostmanIcon },
+  { name: "Typescript", src: TypescriptIcon },
+];
 
 export const AdvanteTechnologies = [
   { name: "React", src: ReactSvg },
@@ -71,6 +83,7 @@ export const FrontendTechnologies = [
   { name: "Material UI", src: MaterialUIcon },
   { name: "Figma", src: FigmaIcon },
   { name: "AdobeXD", src: AdobeXdIcon },
+  { name: "Refine", src: RefineIcon },
 ];
 
 export const BackendTechnologies = [
@@ -90,6 +103,7 @@ export const ToolsTechnologies = [
   { name: "Postman", src: PostmanIcon },
   { name: "Firebase", src: FirebaseIcon },
   { name: "Stripe", src: StripeIcon },
+  { name: "Supabase", src: SupabaseIcon },
 ];
 
 export const LearningTechnologies = [

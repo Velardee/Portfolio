@@ -10,8 +10,11 @@ import advanteLogo from "../../assets/img/advanteLogo.jpg";
 import creativeLogo from "../../assets/img/plusCreativeLogo.jpg";
 import marzhalLogo from "../../assets/img/marzhalLogo.jfif";
 import TimeLineImg from "../../customComponents/TimeLineImg";
+import cocolabLogo from "../../assets/img/cocolabLogo.jpg";
+
 import {
   AdvanteTechnologies,
+  CocolabTechnologies,
   CreativeTechnologies,
   MarzhalTechnologies,
 } from "../../utils/TechnologiesData";
@@ -19,6 +22,15 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 const ExperienceArray = [
+  {
+    position: "Desarrollador Fullstack",
+    company: "COCOLAB International",
+    description:
+      "En mi rol como Desarrollador Fullstack en COCOLAB, he estado involucrado en el desarrollo de una plataforma para la empresa Papalote Museo del Niño, que incluye la creación de un sistema de gestión de usuarios y un sistema de gestión de contenidos. Mis principales tareas incluyen el desarrollo de la interfaz de usuario utilizando NextJs y Material UI, así como la implementación de CRUD´s con supabase desde el frontend con Refine.",
+    date: "Diciembre 2024 - Junio 2025",
+    img: cocolabLogo,
+    technologies: CocolabTechnologies,
+  },
   {
     position: "Desarrollador Fullstack",
     company: "Advante Digital",
