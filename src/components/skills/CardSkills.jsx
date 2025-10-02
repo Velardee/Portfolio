@@ -3,7 +3,7 @@ import GithubL from "../../assets/icons/githubLight.svg";
 
 function CardSkills({ technologies, title }) {
   return (
-    <div className="max-w-lg border-2 border-0 bg-[#323453] rounded-2xl py-6 px-8">
+    <div className="max-w-lg border-0 bg-[#323453] rounded-2xl py-6 px-8">
       <p className="text-2xl font-medium text-center text-white">
         {title}
       </p>
