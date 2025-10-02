@@ -85,7 +85,7 @@ function Experience({ theme }) {
         viewport={{ once: true }}
         className="w-full flex justify-center my-8"
       >
-        <h2 className="text-4xl text-primary dark:text-white font-bold text-center">
+        <h2 className="text-4xl text-white font-bold text-center">
           Mi Experiencía
         </h2>
       </motion.div>

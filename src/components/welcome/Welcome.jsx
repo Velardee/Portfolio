@@ -17,16 +17,16 @@ function Welcome() {
     <MainLayout>
       <div className="flex flex-col-reverse md:flex-row md:justify-center lg:gap-5 px-6 lg:px-0">
         <div className="flex flex-col gap-2 justify-center w-full">
-          <h1 className="text-3xl text-primary dark:text-white font-bold text-center md:text-start">
+          <h1 className="text-3xl text-white font-bold text-center md:text-start">
             Hola, mi <br />
             nombre es{" "}
-            <span className="text-lightPurple dark:text-mediumPurple">
+            <span className="text-mediumPurple">
               Hugo Velarde.
             </span>
           </h1>
-          <h2 className="text-3xl md:text-2xl lg:text-3xl text-primary dark:text-white font-bold text-center md:text-start">
+          <h2 className="text-3xl md:text-2xl lg:text-3xl text-white font-bold text-center md:text-start">
             Soy <br className="md:hidden" />
-            <span className="text-lightPurple dark:text-mediumPurple">
+            <span className="text-mediumPurple">
               <TypeText />
             </span>
           </h2>

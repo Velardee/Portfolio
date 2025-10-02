@@ -11,7 +11,7 @@ function About() {
           viewport={{ once: true }}
           className="w-full"
         >
-          <h2 className="text-4xl text-primary dark:text-white font-bold text-start">
+          <h2 className="text-4xl text-white font-bold text-start">
             Acerca de mi
           </h2>
         </motion.div>
@@ -28,7 +28,7 @@ function About() {
           className="w-14 border-t-4 border-lightPurple"
         ></motion.div>
         <div className="w-full lg:w-3/4">
-          <p className="text-xl text-primary dark:text-coolGray">
+          <p className="text-xl text-coolGray">
             Mi nombre es Hugo Velarde y soy ingeniero en software con más de dos
             años de experiencia como desarrollador fullstack, con un especial
             interés y pasión por el desarrollo frontend. Además, poseo
