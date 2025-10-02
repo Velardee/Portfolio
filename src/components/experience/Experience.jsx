@@ -27,7 +27,7 @@ const ExperienceArray = [
     company: "COCOLAB International",
     description:
       "En mi rol como Desarrollador Fullstack en COCOLAB, he estado involucrado en el desarrollo de una plataforma para la empresa Papalote Museo del Niño, que incluye la creación de un sistema de gestión de usuarios y un sistema de gestión de contenidos. Mis principales tareas incluyen el desarrollo de la interfaz de usuario utilizando NextJs y Material UI, así como la implementación de CRUD´s con supabase desde el frontend con Refine.",
-    date: "Diciembre 2024 - Junio 2025",
+    date: "Diciembre 2024 - Agosto 2025",
     img: cocolabLogo,
     technologies: CocolabTechnologies,
   },
