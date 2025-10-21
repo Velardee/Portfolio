@@ -5,6 +5,7 @@ import Contact from "./components/contact/Contact";
 import Experience from "./components/experience";
 import Skills from "./components/skills";
 import Welcome from "./components/welcome";
+import Projects from "./components/projects/Projects";
 
 //*App is prepare to dark mode, but now is disabled
 
@@ -28,6 +29,7 @@ function App() {
     <div className="bg-primary">
       <Welcome />
       <Experience theme={theme} />
+      <Projects />
       <About />
       <Skills />
       <Contact />
