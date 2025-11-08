@@ -3,6 +3,7 @@ import ReactSvg from "../assets/icons/react.svg";
 import TailwindIcon from "../assets/icons/tailwind.svg";
 
 import WeatheryImg from "../assets/img/projects/WeatheryImg.png";
+import CronoRestImg from "../assets/img/projects/CronoRestSS.png";
 
 export const projectsData = [
     {
@@ -23,5 +24,21 @@ export const projectsData = [
         link: "https://tryweathery.netlify.app/",
         github: "https://github.com/Velardee/Weathery"
 
+    },
+    {
+        id: 2,
+        name: "CronoRest 😴",
+        description: 
+        `CronoRest es una app de calculadora de ciclos de sueño, la app calcula automáticamente tus ciclos de sueño y te muestra las horas ideales para dormir o despertar, basadas en la ciencia del sueño profundo y las fases REM.
+        Solo elige tu hora de despertar o cuándo quieres dormir, y CronoRest hace el resto.`,
+        technologies: ["React", "TypeScript", "Vite", "TailwindCSS"],
+        technologiesIcons: [
+            { name: "React", src: ReactSvg },
+            { name: "TypeScript", src: TypescriptIcon },
+            { name: "TailwindCSS", src: TailwindIcon }
+        ],
+        image: CronoRestImg,
+        link: "https://cronorest.netlify.app/",
+        github: "https://github.com/Velardee/CronoRest"
     }
 ]
