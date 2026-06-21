@@ -31,6 +31,15 @@ import MongoDBIcon from "../assets/icons/mongoDB.svg";
 import RefineIcon from "../assets/icons/refine.svg";
 import SupabaseIcon from "../assets/icons/supabase.svg";
 
+export const ClaseAzulTechnologies = [
+  { name: "React", src: ReactSvg },
+  { name: "TailwindCSS", src: TailwindIcon },
+  { name: "Next JS", src: NextJsIcon },
+  { name: "RTK Query", src: ReduxIcon },
+  { name: "Postman", src: PostmanIcon },
+  { name: "Typescript", src: TypescriptIcon },
+];
+
 export const CocolabTechnologies = [
   { name: "React", src: ReactSvg },
   { name: "Material UI", src: MaterialUIcon },

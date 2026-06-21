@@ -14,6 +14,7 @@ import cocolabLogo from "../../assets/img/cocolabLogo.jpg";
 
 import {
   AdvanteTechnologies,
+  ClaseAzulTechnologies,
   CocolabTechnologies,
   CreativeTechnologies,
   MarzhalTechnologies,
@@ -22,6 +23,15 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 const ExperienceArray = [
+  {
+    position: "Desarrollador Frontend Freelance",
+    company: "Clase Azul",
+    description:
+      "Colaboré en el desarrollo de un sistema de reservas y gestión de contenido web para la tequilera Clase Azul. Mis principales responsabilidades incluyeron el diseño e implementación de la experiencia UI/UX de cada una de las pantallas, el desarrollo frontend con Next.js y Tailwind CSS, y la optimización del consumo de APIs de NestJS utilizando RTK Query.",
+    date: "Diciembre 2025 - Julio 2026",
+    img: "https://yt3.googleusercontent.com/0XrLyT5PbHhUT2X001TX4FdqRTd12T9ECGvKNQ0l_KAPP1DbKFJlbzeMNK-XmEhtTBv0a8zffsw=s900-c-k-c0x00ffffff-no-rj",
+    technologies: ClaseAzulTechnologies,
+  },
   {
     position: "Desarrollador Fullstack",
     company: "COCOLAB International",
