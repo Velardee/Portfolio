@@ -6,39 +6,44 @@ import WeatheryImg from "../assets/img/projects/WeatheryImg.png";
 import CronoRestImg from "../assets/img/projects/CronoRestSS.png";
 
 export const projectsData = [
-    {
-        id: 1,
-        name: "Weathery 🌤️",
-        description: 
-        `Weathery es una app del clima desarrollada con React, TypeScript y Vite, que obtiene datos en tiempo real desde Open-Meteo y usa geolocalización para mostrar el clima actual y pronóstico del usuario. 
-        Cuenta con una interfaz moderna y responsiva creada con TailwindCSS.
-
-        Durante el proyecto reforcé conceptos como consumo de APIs, manejo de zonas horarias (Luxon), geolocalización del navegador, y buenas prácticas de React + TypeScript.`,
-        technologies: ["React", "TypeScript", "Vite", "TailwindCSS"],
-        technologiesIcons: [
-            { name: "React", src: ReactSvg },
-            { name: "TypeScript", src: TypescriptIcon },
-            { name: "TailwindCSS", src: TailwindIcon }
-        ],
-        image: WeatheryImg,
-        link: "https://tryweathery.netlify.app/",
-        github: "https://github.com/Velardee/Weathery"
-
-    },
-    {
-        id: 2,
-        name: "CronoRest 😴",
-        description: 
-        `CronoRest es una app de calculadora de ciclos de sueño, la app calcula automáticamente tus ciclos de sueño y te muestra las horas ideales para dormir o despertar, basadas en la ciencia del sueño profundo y las fases REM.
-        Solo elige tu hora de despertar o cuándo quieres dormir, y CronoRest hace el resto.`,
-        technologies: ["React", "TypeScript", "Vite", "TailwindCSS"],
-        technologiesIcons: [
-            { name: "React", src: ReactSvg },
-            { name: "TypeScript", src: TypescriptIcon },
-            { name: "TailwindCSS", src: TailwindIcon }
-        ],
-        image: CronoRestImg,
-        link: "https://cronorest.netlify.app/",
-        github: "https://github.com/Velardee/CronoRest"
-    }
-]
+  {
+    id: 1,
+    name: "Weathery",
+    description:
+      "Aplicación del clima con datos en tiempo real, geolocalización y una interfaz responsiva pensada para consultar rápido la información principal.",
+    highlights: [
+      "Integra Open-Meteo para clima actual y pronóstico según ubicación.",
+      "Resuelve estados de carga, permisos de geolocalización y zonas horarias.",
+      "Construida con componentes reutilizables y tipado con TypeScript.",
+    ],
+    technologies: ["React", "TypeScript", "Vite", "Tailwind CSS"],
+    technologiesIcons: [
+      { name: "React", src: ReactSvg },
+      { name: "TypeScript", src: TypescriptIcon },
+      { name: "Tailwind CSS", src: TailwindIcon },
+    ],
+    image: WeatheryImg,
+    link: "https://tryweathery.netlify.app/",
+    github: "https://github.com/Velardee/Weathery",
+  },
+  {
+    id: 2,
+    name: "CronoRest",
+    description:
+      "Calculadora de ciclos de sueño que ayuda a elegir horas recomendadas para dormir o despertar mediante una experiencia simple y directa.",
+    highlights: [
+      "Permite calcular horarios desde la hora de dormir o de despertar.",
+      "Prioriza una interacción rápida para usuarios móviles.",
+      "Presenta resultados claros con una interfaz ligera en React.",
+    ],
+    technologies: ["React", "TypeScript", "Vite", "Tailwind CSS"],
+    technologiesIcons: [
+      { name: "React", src: ReactSvg },
+      { name: "TypeScript", src: TypescriptIcon },
+      { name: "Tailwind CSS", src: TailwindIcon },
+    ],
+    image: CronoRestImg,
+    link: "https://cronorest.netlify.app/",
+    github: "https://github.com/Velardee/CronoRest",
+  },
+];

@@ -4,6 +4,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import TechnologiesExperience from "./TechnologiesExperience";
 
 import advanteLogo from "../../assets/img/advanteLogo.jpg";
@@ -19,24 +20,22 @@ import {
   CreativeTechnologies,
   MarzhalTechnologies,
 } from "../../utils/TechnologiesData";
-import { useState } from "react";
-import { useEffect } from "react";
 
 const ExperienceArray = [
   {
     position: "Desarrollador Frontend Freelance",
     company: "Clase Azul",
     description:
-      "Colaboré en el desarrollo de un sistema de reservas y gestión de contenido web para la tequilera Clase Azul. Mis principales responsabilidades incluyeron el diseño e implementación de la experiencia UI/UX de cada una de las pantallas, el desarrollo frontend con Next.js y Tailwind CSS, y la optimización del consumo de APIs de NestJS utilizando RTK Query.",
-    date: "Diciembre 2025 - Julio 2026",
-    img: "https://yt3.googleusercontent.com/0XrLyT5PbHhUT2X001TX4FdqRTd12T9ECGvKNQ0l_KAPP1DbKFJlbzeMNK-XmEhtTBv0a8zffsw=s900-c-k-c0x00ffffff-no-rj",
+      "Colaboré en un sistema de reservas y gestión de contenido web para Clase Azul. Diseñé e implementé flujos de UI, desarrollé pantallas con Next.js y Tailwind CSS, e integré consumo de APIs de NestJS mediante RTK Query.",
+    date: "Diciembre 2025 - Actualidad",
+    img: "https://play-lh.googleusercontent.com/pHmPazN_Q7JIW32XGxSBEcRVS_xQDGS58O4MTTTwpObaKDOPWJS58eoCuaEbGVKxC4I",
     technologies: ClaseAzulTechnologies,
   },
   {
     position: "Desarrollador Fullstack",
     company: "COCOLAB International",
     description:
-      "En mi rol como Desarrollador Fullstack en COCOLAB, he estado involucrado en el desarrollo de una plataforma para la empresa Papalote Museo del Niño, que incluye la creación de un sistema de gestión de usuarios y un sistema de gestión de contenidos. Mis principales tareas incluyen el desarrollo de la interfaz de usuario utilizando NextJs y Material UI, así como la implementación de CRUD´s con supabase desde el frontend con Refine.",
+      "Participé en una plataforma para Papalote Museo del Niño con módulos de gestión de usuarios y contenidos. Desarrollé interfaces administrativas con Next.js y Material UI, y construí CRUDs desde el frontend usando Refine y Supabase.",
     date: "Diciembre 2024 - Agosto 2025",
     img: cocolabLogo,
     technologies: CocolabTechnologies,
@@ -45,26 +44,25 @@ const ExperienceArray = [
     position: "Desarrollador Fullstack",
     company: "Advante Digital",
     description:
-      "Durante mi proceso en la empresa, participé activamente en el desarrollo de varios proyectos clave, desempeñando funciones tanto en el backend como en el frontend, utilizando tecnologías modernas y adaptadas a cada solución.",
+      "Trabajé en proyectos web con responsabilidades frontend y backend, adaptando tecnologías como React, Next.js, Node.js, GraphQL, Firebase, Stripe y Redux Toolkit según las necesidades de cada producto.",
     date: "Octubre 2022 - Octubre 2024",
     img: advanteLogo,
     technologies: AdvanteTechnologies,
   },
   {
-    position: "Desarrollador Frontend (Practicas)",
+    position: "Desarrollador Frontend (Prácticas)",
     company: "4 Plus 1 Creative (Durango)",
     description:
-      "Durante mi estadía profesional, participé en el desarrollo de una aplicación de facturación, asumiendo la responsabilidad de crear el frontend desde cero. Colaboré con el equipo de backend para garantizar la correcta integración y comunicación entre ambas partes del sistema, contribuyendo a la implementación de una solución funcional.",
+      "Desarrollé desde cero el frontend de una aplicación de facturación y colaboré con backend para asegurar una integración clara entre interfaz, endpoints y flujos principales del sistema.",
     date: "Septiembre 2021 - Enero 2022",
     img: creativeLogo,
     technologies: CreativeTechnologies,
   },
   {
-    position: "Desarrollador Frontend (Practicas)",
+    position: "Desarrollador Frontend (Prácticas)",
     company: "Marzhal Hackers",
-    description: `Durante mis primeras dos prácticas profesionales, participé en el desarrollo de la aplicación Fakturor, una herramienta web para verificar si los proveedores tienen problemas con el SAT.\n
-      • Primera instancia: Contribuí al desarrollo frontend de la aplicación web utilizando Angular.\n
-      • Segunda instancia: Desarrollé la aplicación móvil desde cero con Ionic y Angular, además de encargarme del diseño de la interfaz en Adobe XD.`,
+    description:
+      "Participé en Fakturor, una herramienta web para revisar proveedores con problemas ante el SAT. Contribuí al frontend web con Angular y después desarrollé una aplicación móvil con Ionic y Angular, incluyendo diseño de interfaz en Adobe XD.",
     date: "Mayo 2020 - Diciembre 2020",
     img: marzhalLogo,
     technologies: MarzhalTechnologies,
@@ -87,7 +85,7 @@ function Experience({ theme }) {
   }, []);
 
   return (
-    <section className="px-3 lg:px-0 mb-5">
+    <section className="px-3 lg:px-0">
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -96,7 +94,7 @@ function Experience({ theme }) {
         className="w-full flex justify-center my-8"
       >
         <h2 className="text-4xl text-white font-bold text-center">
-          Mi Experiencía
+          Experiencia
         </h2>
       </motion.div>
       <VerticalTimeline animate={!isMobile}>
@@ -106,10 +104,14 @@ function Experience({ theme }) {
               <VerticalTimelineElement
                 key={index}
                 className="vertical-timeline-element--work"
-                contentStyle={{ background: "#323453", color: "#fff" }}
-                contentArrowStyle={{ borderRight: "7px solid  #2F314F" }}
+                contentStyle={{
+                  background: "#323453",
+                  color: "#fff",
+                  border: "1px solid #414467",
+                  borderRadius: "8px",
+                }}
+                contentArrowStyle={{ borderRight: "7px solid  #323453" }}
                 date={experience.date}
-                //   iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
                 icon={<TimeLineImg imageUrl={experience.img} />}
               >
                 <h3 className="vertical-timeline-element-title text-xl font-semibold">
@@ -118,11 +120,9 @@ function Experience({ theme }) {
                 <h4 className="vertical-timeline-element-subtitle text-base font-medium text-[#A2A3BB]">
                   {experience.company}
                 </h4>
-                {experience.description.split("\n").map((line, index) => (
-                  <p className="text-sm" key={index}>
-                    {line}
-                  </p>
-                ))}
+                <p className="text-sm leading-relaxed">
+                  {experience.description}
+                </p>
                 <div>
                   <TechnologiesExperience
                     technologies={experience.technologies}
@@ -133,7 +133,6 @@ function Experience({ theme }) {
           </>
         ) : (
           <>
-            {" "}
             {ExperienceArray.map((experience, index) => (
               <VerticalTimelineElement
                 key={index}
@@ -142,11 +141,10 @@ function Experience({ theme }) {
                   background: "#fff",
                   color: "#2B2D42",
                   border: "2px solid #2B2D42",
-                  borderRadius: "15px",
+                  borderRadius: "8px",
                 }}
                 contentArrowStyle={{ borderRight: "7px solid " }}
                 date={experience.date}
-                //   iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
                 icon={<TimeLineImg imageUrl={experience.img} />}
               >
                 <h3 className="vertical-timeline-element-title text-xl font-semibold">
@@ -155,7 +153,9 @@ function Experience({ theme }) {
                 <h4 className="vertical-timeline-element-subtitle text-base font-medium text-[#A2A3BB]">
                   {experience.company}
                 </h4>
-                <p className="text-sm">{experience.description}</p>
+                <p className="text-sm leading-relaxed">
+                  {experience.description}
+                </p>
                 <div>
                   <TechnologiesExperience
                     technologies={experience.technologies}

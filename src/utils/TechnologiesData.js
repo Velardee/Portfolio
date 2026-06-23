@@ -30,6 +30,10 @@ import DockerIcon from "../assets/icons/docker.svg";
 import MongoDBIcon from "../assets/icons/mongoDB.svg";
 import RefineIcon from "../assets/icons/refine.svg";
 import SupabaseIcon from "../assets/icons/supabase.svg";
+import CodexIcon from "../assets/icons/codex.svg";
+import NotionIcon from "../assets/icons/notion.svg";
+import AntigravityIcon from "../assets/icons/antigravity.svg";
+import AntDesignIcon from "../assets/icons/antDesign.svg";
 
 export const ClaseAzulTechnologies = [
   { name: "React", src: ReactSvg },
@@ -93,6 +97,7 @@ export const FrontendTechnologies = [
   { name: "Figma", src: FigmaIcon },
   { name: "AdobeXD", src: AdobeXdIcon },
   { name: "Refine", src: RefineIcon },
+  { name: "Ant Design", src: AntDesignIcon },
 ];
 
 export const BackendTechnologies = [
@@ -113,6 +118,9 @@ export const ToolsTechnologies = [
   { name: "Firebase", src: FirebaseIcon },
   { name: "Stripe", src: StripeIcon },
   { name: "Supabase", src: SupabaseIcon },
+  { name: "Codex", src: CodexIcon },
+  { name: "Notion", src: NotionIcon },
+  { name: "Antigravity", src: AntigravityIcon },
 ];
 
 export const LearningTechnologies = [
